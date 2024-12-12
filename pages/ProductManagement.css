@@ -1,0 +1,35 @@
+.product-management {
+    margin: 20px;
+}
+
+.search-section input {
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.add-product-section input {
+    padding: 8px;
+    margin: 5px 0;
+}
+
+.product-list-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.product-list-section th,
+.product-list-section td {
+    padding: 10px;
+    text-align: left;
+}
+
+.product-list-section button {
+    padding: 8px 12px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+    .product-list-section button:hover {
+        background-color: #4CAF50;
+        color: white;
+    }

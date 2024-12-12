@@ -1,0 +1,121 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Container for the customer management */
+.customer-management {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Search section */
+.search-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+    .search-section input {
+        width: 70%;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .search-section button {
+        padding: 8px 16px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        .search-section button:hover {
+            background-color: #0056b3;
+        }
+
+/* Add customer form */
+.add-customer-section {
+    margin-bottom: 30px;
+}
+
+    .add-customer-section input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .add-customer-section button {
+        padding: 10px 20px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        .add-customer-section button:hover {
+            background-color: #218838;
+        }
+
+/* Customer list */
+.customer-list-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .customer-list-section table th,
+    .customer-list-section table td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+
+    .customer-list-section table th {
+        background-color: #f2f2f2;
+    }
+
+    .customer-list-section table td input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+.customer-list-section button {
+    padding: 8px 16px;
+    margin-right: 5px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    .customer-list-section button:hover {
+        background-color: #0056b3;
+    }
+
+    .customer-list-section button:nth-child(2) {
+        background-color: #dc3545;
+    }
+
+        .customer-list-section button:nth-child(2):hover {
+            background-color: #c82333;
+        }

@@ -1,0 +1,269 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.billing-component {
+    padding: 20px;
+    font-family: 'Poppins', sans-serif; /* Using Poppins font */
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+/* Customer Information Styles */
+.customer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+}
+
+    .input-field label {
+        font-size: 12px;
+        color: #333;
+    }
+
+    .input-field input,
+    .input-field select {
+        padding: 8px 12px; /* Adjusted padding */
+        font-size: 12px; /* Reduced font size */
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        color: #333;
+        transition: all 0.2s ease-in-out;
+    }
+
+        .input-field input:focus,
+        .input-field select:focus {
+            border-color: #007bff;
+            box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+            outline: none;
+        }
+
+/* Search Bar Styles */
+#searchCustomerForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+    #searchCustomerForm input {
+        padding: 8px 12px; /* Reduced padding */
+        border: 1px solid #ddd;
+        border-radius: 8px; /* Adjusted to match the smaller size */
+        font-size: 12px; /* Reduced font size */
+        font-family: 'Poppins', sans-serif;
+        color: #333;
+        transition: all 0.2s ease-in-out;
+    }
+
+        #searchCustomerForm input:focus {
+            border-color: #007bff;
+            box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+            outline: none;
+        }
+
+/* Add New Customer Button */
+button {
+    padding: 8px 16px; /* Same padding as Add Product button */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px; /* Same border-radius */
+    cursor: pointer;
+    font-size: 12px; /* Same font-size */
+    font-weight: 600;
+    transition: background-color 0.2s ease-in-out;
+}
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+/* Product Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #444;
+}
+
+table button {
+    padding: 8px 16px; /* Reduced padding */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px; /* Adjusted to match the smaller size */
+    cursor: pointer;
+    font-size: 12px; /* Reduced font size */
+    font-weight: 600;
+    margin: 0 5px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+    table button:hover {
+        background-color: #0056b3;
+    }
+
+/* Add Product Button */
+.add-product-btn-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+    .add-product-btn-container button {
+        padding: 8px 16px; /* Same padding as Add New Customer button */
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 20px; /* Same border-radius */
+        cursor: pointer;
+        font-size: 12px; /* Same font-size */
+        font-weight: 600;
+        transition: background-color 0.2s ease-in-out;
+    }
+
+        .add-product-btn-container button:hover {
+            background-color: #0056b3;
+        }
+
+/* Add Product Modal */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px; /* Reduced padding */
+    border-radius: 12px; /* Adjusted to match the smaller size */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    width: 350px; /* Reduced width */
+    z-index: 1000;
+    display: none;
+}
+
+    .modal.visible {
+        display: block;
+    }
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+    .modal-content h3 {
+        font-size: 18px;
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #333333;
+    }
+
+    .modal-content label {
+        font-size: 12px;
+        color: #333;
+    }
+
+    .modal-content input {
+        padding: 8px 12px; /* Reduced padding */
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 12px; /* Reduced font size */
+        font-family: 'Poppins', sans-serif;
+        color: #333;
+        transition: all 0.2s ease-in-out;
+    }
+
+        .modal-content input:focus {
+            border-color: #007bff;
+            box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+            outline: none;
+        }
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+    .modal-buttons button {
+        padding: 8px 16px; /* Reduced padding */
+        font-size: 12px; /* Reduced font size */
+        font-weight: 600;
+        color: white;
+        background-color: #007bff;
+        border: none;
+        border-radius: 20px; /* Adjusted to match the smaller size */
+        cursor: pointer;
+    }
+
+        .modal-buttons button:hover {
+            background-color: #0056b3;
+        }
+
+/* Total Section Styles */
+h4 {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+p {
+    font-size: 12px;
+    color: #333;
+}
+
+.summary-section {
+    margin-top: 20px;
+}
+
+    .summary-section h3 {
+        font-size: 16px;
+        font-weight: 600;
+        color: #333;
+    }
+
+    .summary-section .summary-table th,
+    .summary-section .summary-table td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+/* Capsule Button */
+.capsule-button {
+    padding: 10px 20px; /* Standard padding */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.2s ease-in-out;
+}
+
+    .capsule-button:hover {
+        background-color: #0056b3;
+    }
